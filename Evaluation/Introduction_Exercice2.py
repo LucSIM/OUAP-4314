@@ -30,7 +30,15 @@ def remove_special(string):
 def get_domain(string):
 	return string[string.find("/")+2:string.find(".")]
 
-
-print(remove_spaces("  bonjour  je suis Luc!  "))	
-print(remove_special("b;o!nj?ou|r+"))
-print(get_domain("https://github.com"))
+entree="  bonjour  je suis Luc!  "
+print("Fonction qui enleve les espaces:")
+print("Entree: "+entree)
+print("Sortie: "+remove_spaces(entree)+"\n")
+entree="b;o!nj?ou|r+"
+print("Fonction qui enleve les caracteres speciaux:")
+print("Entree: "+entree)	
+print("Sortie: "+remove_special(entree)+"\n")
+entree="https://github.com"
+print("Fonction qui retourne le nom de domaine:")
+print("Entree: "+entree)
+print("Sortie: "+get_domain(entree)+"\n")
